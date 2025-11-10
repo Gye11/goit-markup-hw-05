@@ -603,29 +603,14 @@ a {
   fill: #f4f4fd;
 }
 
-/* ===== SUBSCRIBE BLOĞU ===== */
+/* ===== SUBSCRIBE (FİGMA %100) ===== */
 
-.footer-subscribe {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 16px;
-}
-
-.footer-subscribe p {
-  font-size: 16px;
-  font-weight: 500;
-  color: #ffffff;
-  margin-bottom: 8px;
-}
-
-/* Form yapısı */
 .subscribe-form {
   display: flex;
   gap: 16px;
 }
 
-/* Input */
+/* INPUT */
 .subscribe-form input {
   width: 264px;
   height: 40px;
@@ -636,26 +621,28 @@ a {
   border-radius: 4px;
 
   color: #f4f4fd;
-  font-size: 14px;
+  font-size: 16px;
+
+  outline: none; /* Tarayıcı mavi çerçeveyi kaldırır */
 }
 
 .subscribe-form input::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* Button */
+/* BUTTON */
 .subscribe-form button {
   display: flex;
   align-items: center;
   gap: 8px;
 
-  padding: 8px 24px;
+  background-color: #4d5ae5;
   border: none;
   border-radius: 4px;
 
-  background-color: #4d5ae5;
-  color: #ffffff;
+  padding: 8px 24px;
 
+  color: #ffffff;
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
@@ -667,8 +654,9 @@ a {
   background-color: #404bbf;
 }
 
+/* İKON */
 .subscribe-form svg {
-  width: 16px;
-  height: 16px;
   fill: #ffffff;
+  width: 20px;
+  height: 20px;
 }
