@@ -660,3 +660,8 @@ a {
   width: 20px;
   height: 20px;
 }
+
+.footer-subscribe .subscribe-form button svg {
+  width: 24px;
+  height: 24px;
+}
