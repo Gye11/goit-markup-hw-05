@@ -665,3 +665,166 @@ a {
   width: 24px;
   height: 24px;
 }
+
+/* === MODAL === */
+
+/* Arka plan ve görünürlük ayarı */
+.backdrop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Checkbox aktifse modal görünür */
+#modal-toggle:checked ~ .backdrop {
+  display: flex;
+}
+
+/* Koyu saydam arka plan */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(46, 47, 66, 0.4);
+}
+
+/* Modal kutusu */
+.modal {
+  position: relative;
+  z-index: 1;
+  width: 408px;
+  background: #fcfcfc;
+  border-radius: 4px;
+  padding: 72px 24px 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Kapatma butonu (X) */
+.modal-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  background: #e7e9fc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-close:hover {
+  background: #404bbf;
+}
+.modal-icon {
+  fill: #2e2f42;
+}
+
+/* Başlık */
+.modal-title {
+  text-align: center;
+  font-size: 16px;
+  color: #2e2f42;
+  margin-bottom: 16px;
+}
+
+/* Form genel yapısı */
+.form-field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+
+.form-label {
+  font-size: 12px;
+  color: #8e8f99;
+  margin-bottom: 4px;
+}
+
+/* Input ve textarea stilleri */
+.form-input,
+.form-textarea {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 11px 38px;
+  font-size: 14px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-textarea {
+  resize: none;
+  height: 120px;
+  padding: 8px 16px;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: #4d5ae5;
+  outline: none;
+}
+
+/* İkonlar */
+.form-icon {
+  position: absolute;
+  left: 16px;
+  bottom: 12px;
+  fill: #2e2f42;
+}
+
+/* Checkbox alanı */
+.form-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 16px 0 24px;
+}
+
+.form-checkbox input {
+  position: absolute;
+  opacity: 0;
+}
+
+.checkbox-custom {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-checkbox input:checked + .checkbox-custom {
+  background: #404bbf;
+  border-color: #404bbf;
+}
+
+.checkbox-icon {
+  fill: #f4f4fd;
+}
+
+.checkbox-text {
+  font-size: 12px;
+  color: #8e8f99;
+}
+
+/* Send butonu */
+.modal-btn {
+  width: 100%;
+  height: 56px;
+  background: #4d5ae5;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn:hover {
+  background: #404bbf;
+}
