@@ -532,9 +532,9 @@ a {
   padding: 0 15px;
 
   display: flex;
-  justify-content: flex-start;  
+  justify-content: flex-start;
   align-items: flex-start;
-  gap: 120px;                   
+  gap: 120px;
 }
 
 .footer-left {
@@ -565,9 +565,10 @@ a {
 .footer-right {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;  
+  align-items: flex-start;
   gap: 16px;
-  margin-left: 0;          
+  margin-left: 0;
+}
 
 .footer-right p {
   font-size: 16px;
@@ -847,4 +848,3 @@ a {
 .modal-btn:hover {
   background: #404bbf;
 }
-
