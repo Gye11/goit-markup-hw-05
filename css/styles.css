@@ -711,7 +711,7 @@ a {
 
 /* Modal kutusu */
 .modal {
-  position: relative;
+  position: absolute;
   z-index: 1;
   width: 408px;
   background: #fcfcfc;
@@ -732,7 +732,7 @@ a {
 
 /* Kapatma butonu */
 .modal-close {
-  position: relative;
+  position: absolute;
   top: 24px;
   right: 24px;
   width: 24px;
