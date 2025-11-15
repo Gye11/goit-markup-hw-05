@@ -739,6 +739,10 @@ a {
   background: #404bbf;
 }
 
+.modal-close:hover .modal-icon {
+  fill: #ffffff;
+}
+
 .modal-icon {
   fill: #2e2f42;
 }
