@@ -604,14 +604,11 @@ a {
   fill: #f4f4fd;
 }
 
-/* ===== SUBSCRIBE (FİGMA %100) ===== */
-
 .subscribe-form {
   display: flex;
   gap: 16px;
 }
 
-/* INPUT */
 .subscribe-form input {
   width: 264px;
   height: 40px;
@@ -624,14 +621,13 @@ a {
   color: #f4f4fd;
   font-size: 16px;
 
-  outline: none; /* Tarayıcı mavi çerçeveyi kaldırır */
+  outline: none; 
 }
 
 .subscribe-form input::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* BUTTON */
 .subscribe-form button {
   display: flex;
   align-items: center;
@@ -655,7 +651,6 @@ a {
   background-color: #404bbf;
 }
 
-/* İKON */
 .subscribe-form svg {
   fill: #ffffff;
   width: 20px;
@@ -667,7 +662,6 @@ a {
   height: 24px;
 }
 
-/* === MODAL === */
 .backdrop {
   display: none;
   position: fixed;
@@ -687,7 +681,6 @@ a {
   background: rgba(46, 47, 66, 0.4);
 }
 
-/* === MODAL === */
 .backdrop {
   display: none;
   position: fixed;
@@ -698,7 +691,6 @@ a {
   z-index: 1000;
 }
 
-/* Checkbox işaretliyken modal görünür */
 #modal-toggle:checked ~ .backdrop {
   display: flex;
 }
@@ -711,7 +703,7 @@ a {
 
 /* Modal kutusu */
 .modal {
-  position: absolute;
+  position: relative;
   z-index: 1;
   width: 408px;
   background: #fcfcfc;
@@ -724,13 +716,10 @@ a {
 }
 
 .modal:hover {
-  outline-color: #4d5ae5; /* Mavi çizgi */
-  box-shadow: 0 0 0 4px rgba(77, 90, 229, 0.1); /* Yumuşak mavi glow */
+  outline-color: #4d5ae5;
+  box-shadow: 0 0 0 4px rgba(77, 90, 229, 0.1); 
 }
 
-}
-
-/* Kapatma butonu */
 .modal-close {
   position: absolute;
   top: 24px;
@@ -761,7 +750,6 @@ a {
   margin-bottom: 16px;
 }
 
-/* Form alanları */
 .form-field {
   position: relative;
   display: flex;
@@ -796,7 +784,6 @@ a {
   outline: none;
 }
 
-/* Input ikonları */
 .form-icon {
   position: absolute;
   left: 16px;
@@ -804,7 +791,6 @@ a {
   fill: #2e2f42;
 }
 
-/* Checkbox */
 .form-checkbox {
   display: flex;
   align-items: center;
@@ -842,7 +828,6 @@ a {
   color: #8e8f99;
 }
 
-/* Send butonu */
 .modal-btn {
   width: 100%;
   height: 56px;
