@@ -852,3 +852,7 @@ a {
 .subscribe-form button:focus {
   background-color: #31d0aa;
 }
+
+#modal-toggle:checked ~ .backdrop {
+  display: flex;
+}
