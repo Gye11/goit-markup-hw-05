@@ -567,3 +567,10 @@ a {
 .modal-btn:hover {
   background-color: #404bbf;
 }
+
+.modal-overlay {
+  position: absolute;
+  inset: 0;
+  background: transparent;
+  cursor: pointer;
+}
