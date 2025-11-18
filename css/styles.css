@@ -624,3 +624,7 @@ a {
 .modal-btn:hover {
   background-color: #404bbf;
 }
+
+#modal-toggle:checked ~ .backdrop {
+  display: flex;
+}
