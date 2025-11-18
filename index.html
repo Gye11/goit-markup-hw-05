@@ -5,21 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
 
+    <!-- Normalize -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
 
+    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
 
+    <!-- Main CSS -->
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
-    <!-- Checkbox sadece 1 kez -->
+    <!-- MODAL CHECKBOX (TEK) -->
     <input type="checkbox" id="modal-toggle" hidden />
 
     <!-- ================= HEADER ================= -->
@@ -46,6 +49,8 @@
     <section class="hero">
       <div class="container">
         <h1>Effective Solutions for Your Business</h1>
+
+        <!-- MODAL AÇAN BUTON -->
         <label for="modal-toggle" class="order-btn">Order Service</label>
       </div>
     </section>
@@ -113,8 +118,9 @@
     <section class="team">
       <div class="container">
         <h2>Our Team</h2>
+
         <ul class="team-list">
-          <!-- TEAM CARD #1 -->
+          <!-- Card 1 -->
           <li class="card">
             <img src="./images/team1.png" alt="Mark Guerrero" width="264" />
             <h3>Mark Guerrero</h3>
@@ -128,6 +134,7 @@
                   </svg>
                 </a>
               </li>
+
               <li>
                 <a href="#">
                   <svg>
@@ -135,6 +142,7 @@
                   </svg>
                 </a>
               </li>
+
               <li>
                 <a href="#">
                   <svg>
@@ -142,6 +150,7 @@
                   </svg>
                 </a>
               </li>
+
               <li>
                 <a href="#">
                   <svg>
@@ -152,7 +161,7 @@
             </ul>
           </li>
 
-          <!-- TEAM CARD #2 -->
+          <!-- Card 2 -->
           <li class="card">
             <img src="./images/team2.png" alt="Tom Ford" width="264" />
             <h3>Tom Ford</h3>
@@ -166,6 +175,7 @@
                   </svg>
                 </a>
               </li>
+
               <li>
                 <a href="#">
                   <svg>
@@ -173,6 +183,7 @@
                   </svg>
                 </a>
               </li>
+
               <li>
                 <a href="#">
                   <svg>
@@ -180,6 +191,7 @@
                   </svg>
                 </a>
               </li>
+
               <li>
                 <a href="#">
                   <svg>
@@ -190,7 +202,7 @@
             </ul>
           </li>
 
-          <!-- TEAM CARD #3 -->
+          <!-- Card 3 -->
           <li class="card">
             <img src="./images/team3.png" alt="Camila Garcia" width="264" />
             <h3>Camila Garcia</h3>
@@ -204,6 +216,7 @@
                   </svg>
                 </a>
               </li>
+
               <li>
                 <a href="#">
                   <svg>
@@ -211,6 +224,7 @@
                   </svg>
                 </a>
               </li>
+
               <li>
                 <a href="#">
                   <svg>
@@ -218,6 +232,7 @@
                   </svg>
                 </a>
               </li>
+
               <li>
                 <a href="#">
                   <svg>
@@ -228,7 +243,7 @@
             </ul>
           </li>
 
-          <!-- TEAM CARD #4 -->
+          <!-- Card 4 -->
           <li class="card">
             <img src="./images/team4.png" alt="Daniel Wilson" width="264" />
             <h3>Daniel Wilson</h3>
@@ -242,6 +257,7 @@
                   </svg>
                 </a>
               </li>
+
               <li>
                 <a href="#">
                   <svg>
@@ -249,6 +265,7 @@
                   </svg>
                 </a>
               </li>
+
               <li>
                 <a href="#">
                   <svg>
@@ -256,6 +273,7 @@
                   </svg>
                 </a>
               </li>
+
               <li>
                 <a href="#">
                   <svg>
@@ -275,7 +293,6 @@
         <h2>Our Portfolio</h2>
 
         <ul class="portfolio-list">
-          <!-- Portfolio items aynı -->
           <li class="portfolio-item">
             <div class="portfolio-thumb">
               <img src="./images/ilkresim.png" alt="Banking App" />
@@ -359,16 +376,19 @@
                 </svg>
               </a>
             </li>
+
             <li>
               <a href="#">
                 <svg><use href="./images/icons.svg#icon-twitter-1"></use></svg>
               </a>
             </li>
+
             <li>
               <a href="#">
                 <svg><use href="./images/icons.svg#icon-facebook-1"></use></svg>
               </a>
             </li>
+
             <li>
               <a href="#">
                 <svg><use href="./images/icons.svg#icon-linkedin-1"></use></svg>
@@ -379,8 +399,10 @@
 
         <div class="footer-subscribe">
           <p>Subscribe</p>
+
           <form class="subscribe-form">
             <input type="email" placeholder="E-mail" />
+
             <button type="submit">
               Subscribe
               <svg width="24" height="24">
@@ -394,9 +416,11 @@
 
     <!-- ================= MODAL ================= -->
     <div class="backdrop">
+      <!-- MODAL KAPATAN TIKLANABİLİR ALAN -->
       <label for="modal-toggle" class="modal-overlay"></label>
 
       <div class="modal">
+        <!-- CLOSE BUTTON -->
         <label for="modal-toggle" class="modal-close">
           <svg class="modal-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
@@ -405,53 +429,31 @@
 
         <p class="modal-title">Leave your contacts and we will call you back</p>
 
-        <form class="modal-form" name="callback-form" autocomplete="off">
-          <!-- NAME FIELD -->
+        <form class="modal-form" autocomplete="off">
           <label class="form-field">
             <span class="form-label">Name</span>
-            <input
-              type="text"
-              name="user-name"
-              class="form-input"
-              placeholder="Name"
-              required
-            />
+            <input type="text" name="user-name" class="form-input" required />
             <svg class="form-icon" width="18" height="18">
               <use href="./images/icons.svg#icon-simge"></use>
             </svg>
           </label>
 
-          <!-- PHONE FIELD -->
           <label class="form-field">
             <span class="form-label">Phone</span>
-            <input
-              type="tel"
-              name="user-phone"
-              class="form-input"
-              placeholder="Phone"
-              required
-            />
+            <input type="tel" name="user-phone" class="form-input" required />
             <svg class="form-icon" width="18" height="18">
               <use href="./images/icons.svg#icon-telefon"></use>
             </svg>
           </label>
 
-          <!-- EMAIL FIELD -->
           <label class="form-field">
             <span class="form-label">Email</span>
-            <input
-              type="email"
-              name="user-email"
-              class="form-input"
-              placeholder="E-mail"
-              required
-            />
+            <input type="email" name="user-email" class="form-input" required />
             <svg class="form-icon" width="18" height="18">
               <use href="./images/icons.svg#icon-mektup"></use>
             </svg>
           </label>
 
-          <!-- COMMENT FIELD -->
           <label class="form-field">
             <span class="form-label">Comment</span>
             <textarea
@@ -461,7 +463,6 @@
             ></textarea>
           </label>
 
-          <!-- CHECKBOX (COMMENT’TEN SONRA) -->
           <label class="form-checkbox">
             <input type="checkbox" name="license" required />
             <span class="checkbox-custom">
@@ -474,7 +475,6 @@
             </span>
           </label>
 
-          <!-- SEND BUTTON -->
           <button type="submit" class="modal-btn">Send</button>
         </form>
       </div>
