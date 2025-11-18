@@ -5,23 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
 
-    <!-- Normalize -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
 
-    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Main CSS -->
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
+    <!-- Checkbox sadece 1 kez -->
+    <input type="checkbox" id="modal-toggle" hidden />
+
+    <!-- ================= HEADER ================= -->
     <header class="header">
       <div class="container header-container">
         <a href="#" class="logo">WEB<span>STUDIO</span></a>
@@ -41,14 +42,15 @@
       </div>
     </header>
 
+    <!-- ================= HERO ================= -->
     <section class="hero">
       <div class="container">
         <h1>Effective Solutions for Your Business</h1>
-
         <label for="modal-toggle" class="order-btn">Order Service</label>
       </div>
     </section>
 
+    <!-- ================= ADVANTAGES ================= -->
     <section class="advantages">
       <div class="container">
         <ul class="adv-list">
@@ -107,135 +109,159 @@
       </div>
     </section>
 
+    <!-- ================= TEAM ================= -->
     <section class="team">
       <div class="container">
         <h2>Our Team</h2>
         <ul class="team-list">
+          <!-- TEAM CARD #1 -->
           <li class="card">
             <img src="./images/team1.png" alt="Mark Guerrero" width="264" />
             <h3>Mark Guerrero</h3>
             <p>Product Designer</p>
+
             <ul class="social-list">
               <li>
-                <a href="#"
-                  ><svg>
+                <a href="#">
+                  <svg>
                     <use href="./images/icons.svg#icon-instagram-2"></use>
                   </svg>
                 </a>
               </li>
               <li>
-                <a href="#"
-                  ><svg>
-                    <use href="./images/icons.svg#icon-twitter-1"></use></svg
-                ></a>
+                <a href="#">
+                  <svg>
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a href="#"
-                  ><svg>
-                    <use href="./images/icons.svg#icon-facebook-1"></use></svg
-                ></a>
+                <a href="#">
+                  <svg>
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a href="#"
-                  ><svg>
-                    <use href="./images/icons.svg#icon-linkedin-1"></use></svg
-                ></a>
+                <a href="#">
+                  <svg>
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </li>
 
+          <!-- TEAM CARD #2 -->
           <li class="card">
             <img src="./images/team2.png" alt="Tom Ford" width="264" />
             <h3>Tom Ford</h3>
             <p>Frontend Developer</p>
+
             <ul class="social-list">
               <li>
-                <a href="#"
-                  ><svg>
-                    <use href="./images/icons.svg#icon-instagram-2"></use></svg
-                ></a>
+                <a href="#">
+                  <svg>
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a href="#"
-                  ><svg>
-                    <use href="./images/icons.svg#icon-twitter-1"></use></svg
-                ></a>
+                <a href="#">
+                  <svg>
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a href="#"
-                  ><svg>
-                    <use href="./images/icons.svg#icon-facebook-1"></use></svg
-                ></a>
+                <a href="#">
+                  <svg>
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a href="#"
-                  ><svg>
-                    <use href="./images/icons.svg#icon-linkedin-1"></use></svg
-                ></a>
+                <a href="#">
+                  <svg>
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </li>
 
+          <!-- TEAM CARD #3 -->
           <li class="card">
             <img src="./images/team3.png" alt="Camila Garcia" width="264" />
             <h3>Camila Garcia</h3>
             <p>Marketing</p>
+
             <ul class="social-list">
               <li>
-                <a href="#"
-                  ><svg>
-                    <use href="./images/icons.svg#icon-instagram-2"></use></svg
-                ></a>
+                <a href="#">
+                  <svg>
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a href="#"
-                  ><svg>
-                    <use href="./images/icons.svg#icon-twitter-1"></use></svg
-                ></a>
+                <a href="#">
+                  <svg>
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a href="#"
-                  ><svg>
-                    <use href="./images/icons.svg#icon-facebook-1"></use></svg
-                ></a>
+                <a href="#">
+                  <svg>
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a href="#"
-                  ><svg>
-                    <use href="./images/icons.svg#icon-linkedin-1"></use></svg
-                ></a>
+                <a href="#">
+                  <svg>
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </li>
 
+          <!-- TEAM CARD #4 -->
           <li class="card">
             <img src="./images/team4.png" alt="Daniel Wilson" width="264" />
             <h3>Daniel Wilson</h3>
             <p>UI Designer</p>
+
             <ul class="social-list">
               <li>
-                <a href="#"
-                  ><svg>
-                    <use href="./images/icons.svg#icon-instagram-2"></use></svg
-                ></a>
+                <a href="#">
+                  <svg>
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a href="#"
-                  ><svg>
-                    <use href="./images/icons.svg#icon-twitter-1"></use></svg
-                ></a>
+                <a href="#">
+                  <svg>
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a href="#"
-                  ><svg>
-                    <use href="./images/icons.svg#icon-facebook-1"></use></svg
-                ></a>
+                <a href="#">
+                  <svg>
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a href="#"
-                  ><svg>
-                    <use href="./images/icons.svg#icon-linkedin-1"></use></svg
-                ></a>
+                <a href="#">
+                  <svg>
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </li>
@@ -243,11 +269,13 @@
       </div>
     </section>
 
-    <!-- Portfolio -->
+    <!-- ================= PORTFOLIO ================= -->
     <section class="portfolio">
       <div class="container">
         <h2>Our Portfolio</h2>
+
         <ul class="portfolio-list">
+          <!-- Portfolio items aynı -->
           <li class="portfolio-item">
             <div class="portfolio-thumb">
               <img src="./images/ilkresim.png" alt="Banking App" />
@@ -256,6 +284,7 @@
             <h3>Banking App</h3>
             <p>App</p>
           </li>
+
           <li class="portfolio-item">
             <div class="portfolio-thumb">
               <img src="./images/ikinciresim.png" alt="Cashless Payment" />
@@ -269,6 +298,7 @@
             <h3>Cashless Payment</h3>
             <p>Marketing</p>
           </li>
+
           <li class="portfolio-item">
             <div class="portfolio-thumb">
               <img src="./images/üçüncüresim.png" alt="Meditation App" />
@@ -277,6 +307,7 @@
             <h3>Meditation App</h3>
             <p>App</p>
           </li>
+
           <li class="portfolio-item">
             <div class="portfolio-thumb">
               <img src="./images/dördüncüresim.png" alt="Taxi Service" />
@@ -285,6 +316,7 @@
             <h3>Taxi Service</h3>
             <p>Marketing</p>
           </li>
+
           <li class="portfolio-item">
             <div class="portfolio-thumb">
               <img src="./images/beşinciresim.png" alt="Screen Illustrations" />
@@ -293,6 +325,7 @@
             <h3>Screen Illustrations</h3>
             <p>Design</p>
           </li>
+
           <li class="portfolio-item">
             <div class="portfolio-thumb">
               <img src="./images/altıncıresim.png" alt="Online Courses" />
@@ -305,6 +338,7 @@
       </div>
     </section>
 
+    <!-- ================= FOOTER ================= -->
     <footer class="footer">
       <div class="container footer-container">
         <div class="footer-left">
@@ -358,9 +392,7 @@
       </div>
     </footer>
 
-    <!-- ✅ BACKDROP BURADA OLMALI (BODY İÇİNDE VE FOOTER DIŞINDA) -->
-    <input type="checkbox" id="modal-toggle" hidden />
-
+    <!-- ================= MODAL ================= -->
     <div class="backdrop">
       <label for="modal-toggle" class="modal-overlay"></label>
 
@@ -374,6 +406,7 @@
         <p class="modal-title">Leave your contacts and we will call you back</p>
 
         <form class="modal-form" name="callback-form" autocomplete="off">
+          <!-- NAME FIELD -->
           <label class="form-field">
             <span class="form-label">Name</span>
             <input
@@ -388,6 +421,7 @@
             </svg>
           </label>
 
+          <!-- PHONE FIELD -->
           <label class="form-field">
             <span class="form-label">Phone</span>
             <input
@@ -402,6 +436,7 @@
             </svg>
           </label>
 
+          <!-- EMAIL FIELD -->
           <label class="form-field">
             <span class="form-label">Email</span>
             <input
@@ -416,6 +451,17 @@
             </svg>
           </label>
 
+          <!-- COMMENT FIELD -->
+          <label class="form-field">
+            <span class="form-label">Comment</span>
+            <textarea
+              class="form-textarea"
+              name="user-comment"
+              placeholder="Comment"
+            ></textarea>
+          </label>
+
+          <!-- CHECKBOX (COMMENT’TEN SONRA) -->
           <label class="form-checkbox">
             <input type="checkbox" name="license" required />
             <span class="checkbox-custom">
@@ -428,15 +474,7 @@
             </span>
           </label>
 
-          <label class="form-field">
-            <span class="form-label">Comment</span>
-            <textarea
-              class="form-textarea"
-              name="user-comment"
-              placeholder="Comment"
-            ></textarea>
-          </label>
-
+          <!-- SEND BUTTON -->
           <button type="submit" class="modal-btn">Send</button>
         </form>
       </div>
