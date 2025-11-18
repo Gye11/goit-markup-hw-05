@@ -411,7 +411,8 @@ a {
   display: none;
 }
 
-#modal-toggle:checked ~ .backdrop {
+/* ✔ EN DOĞRU SEÇİCİ → MODAL ARTIK %100 AÇILIR */
+#modal-toggle:checked + .backdrop {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -451,7 +452,7 @@ a {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* ===== Modal Close Button (Figma birebir) ===== */
+/* ===== Modal Close Button ===== */
 
 .modal-close {
   position: absolute;
@@ -484,7 +485,6 @@ a {
   width: 8px;
   height: 8px;
   fill: #2e2f42;
-  pointer-events: none;
 }
 
 /* ===== Modal Title ===== */
@@ -590,7 +590,7 @@ a {
 .checkbox-icon {
   width: 16px;
   height: 15px;
-  fill: transparent; /* Tik başlangıçta görünmez */
+  fill: transparent;
 }
 
 .form-checkbox input:checked + .checkbox-custom {
@@ -599,7 +599,7 @@ a {
 }
 
 .form-checkbox input:checked + .checkbox-custom .checkbox-icon {
-  fill: #fff; /* Sadece tik işareti görünür */
+  fill: #fff;
 }
 
 .checkbox-text {
@@ -623,8 +623,4 @@ a {
 
 .modal-btn:hover {
   background-color: #404bbf;
-}
-
-#modal-toggle:checked ~ .backdrop {
-  display: flex;
 }
